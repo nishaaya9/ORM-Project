@@ -31,7 +31,7 @@
                         <td>{{$student->stud_name}}</td>
                         <td>{{$student->stud_city}}</td>
                         <td>{{$student->stud_contact}}</td>
-                        <td><img src="{{Storage::url($student->image_path) }}" class="card-img-top"></td>
+                        <td><img src="/Images/{{$student->stud_image}}" height="50px" width="70px"></td>
                         <td>
                             <form action="{{route('student.destroy',$student->stud_id)}}" method="post">
                             <a href="{{route('student.edit',$student->stud_id)}}" class="btn btn-success">Edit</a>

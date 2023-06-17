@@ -28,9 +28,9 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Image</label>
-            <img src="" height="50px" width="70px">
-            <input type="hidden" name="hiddenimg" value="">
-            <input type="file" class="form-control" id="exampleInputPassword1" name="image">
+            <img src="/Images/{{$student->stud_image}}" height="50px" width="70px">
+            <input type="text" name="hiddenimg" value="{{$student->stud_image}}">
+            <input type="file" class="form-control" id="exampleInputPassword1" name="image" value="{{$student->stud_image ?? ''}}">
         </div>
         <input type="submit" class="btn btn-primary" value="Update">
     </form>
